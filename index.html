@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" type='text/css'>
     <link rel="stylesheet" href="index.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
   </head>
 
@@ -14,14 +13,17 @@
     <div class="container fluid">
       <h1>The True Cost of Shopping</h1>
       <h3>Have you ever considered the true cost of what you're buying? Time is money, so when you buy with money, you're buying with your time.</h3>
-      <h3>When you consider pricing items with time instead of money, you may reconsider buying on impulse.</h3>
+      <h3>When you consider pricing items with time instead of money, you may reconsider those impulse buys.</h3>
       <form>
-          Item Price:<br><input type="text" id="price" name="item-price"><br>
-          Your Hourly Wage:<br><input type="text" id="wage" name="hourly-wage">
+          Item Price: <input type="text" id="price"><br>
+          Your Hourly Wage: <input type="text" id="wage">
       </form>
 
-      <button type="button" onclick="myFunction()"></button>
+      <button type="button" class="btn btn-default btn-lg" onclick="calculateCost()">How Much is This Worth?</button>
+
+      <h3 id="cost">Cost</h3>
     </div>
+
 
 </body>
 </html>
