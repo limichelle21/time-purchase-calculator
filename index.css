@@ -29,6 +29,10 @@ body {
   text-shadow: 2px 2px 4px #898989;
 }
 
+.field-label {
+  font-size: 3rem;
+}
+
 input {
   width: 20rem;
   text-align: center;
