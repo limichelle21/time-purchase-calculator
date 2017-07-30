@@ -22,16 +22,20 @@
 
         <div class="row">
           <div class="col-sm-4 col-sm-offset-4">
-            <div class="form-group input-form">
-                <label for="priceInput" class="field-label">Item Price:</label>
-                <input type="number" class="form-control" placeholder="Enter item price" id="price"><br>
-                <label for="wageInput" class="field-label">Hourly Wage:</label>
-                <input type="number" class="form-control" placeholder="Enter your hourly wage" id="wage">
-                <br>
-                <small class="form-text text-muted small-note">How to calculate your hourly wage:</small>
-                <small class="form-text text-muted small-note">Divide your annual salary by total number of hours worked. There are 2080 hours in a standard 40-hour workweek per year. For more realistic estimates, enter your after-tax hourly wage.</small>
-                <button type="button" class="btn btn-success btn-lg" onclick="calculateCost()">Calculate Hours to Work</button>
-            </div>
+            <form>
+              <div class="form-group input-form">
+                  <label for="priceInput" class="field-label">Item Price:</label>
+                  <input type="number" class="form-control" placeholder="Enter item price" id="price"><br>
+                  <label for="wageInput" class="field-label">Hourly Wage:</label>
+                  <input type="number" class="form-control" placeholder="Enter your hourly wage" id="wage">
+                  <br>
+                  <small class="form-text text-muted small-note">How to calculate your hourly wage:</small>
+                  <small class="form-text text-muted small-note">Divide your annual salary by total number of hours worked. There are 2080 hours in a standard 40-hour workweek per year. For more realistic estimates, enter your after-tax hourly wage.</small>
+                  <div class="button-holder">
+                    <button type="button" class="btn btn-success btn-lg" onclick="calculateCost()">Calculate Hours to Work</button>
+                  </div>
+              </div>
+            </form>
           </div>
         </div>
         <div class="result">

@@ -42,6 +42,10 @@ input {
     margin: 5rem;
 }
 
+.button-holder {
+  text-align: center;
+}
+
 .result {
   text-align: center;
   padding-top: 1rem;
