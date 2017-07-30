@@ -1,0 +1,51 @@
+body {
+  font-family: "Lato","Raleway",Helvetica,Arial,sans-serif;
+  background-image: url("images/nightblur.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+
+.header {
+  font-weight: bolder;
+  text-shadow: 2px 2px 4px #898989;
+  padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+  padding-bottom: 50px;
+  text-align: center;
+  color: white;
+  height: 50rem;
+}
+
+.header > h2 {
+  padding-top: 12rem;
+}
+
+.header > h3 {}
+
+.input-form {
+  display: block;
+  text-align: center;
+  text-shadow: 2px 2px 4px #898989;
+}
+
+input {
+  width: 20rem;
+  text-align: center;
+}
+
+.btn {
+    margin: 5rem;
+}
+
+.result {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 20rem;
+  color: white;
+}
+
+.small-note {
+  text-align: center;
+  color: #dbdbdb;
+}

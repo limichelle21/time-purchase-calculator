@@ -4,25 +4,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How Much is your Time Worth?</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:900|Raleway:900" type='text/css'>
     <link rel="stylesheet" href="index.css">
     <script type="text/javascript" src="index.js"></script>
   </head>
 
 <body>
-    <div class="container fluid">
-      <h1>The True Cost of Shopping</h1>
-      <h3>Have you ever considered the true cost of what you're buying? Time is money, so when you buy with money, you're buying with your time.</h3>
-      <h3>When you consider pricing items with time instead of money, you may reconsider those impulse buys.</h3>
-      <form>
-          Item Price: <input type="text" id="price"><br>
-          Your Hourly Wage: <input type="text" id="wage">
-      </form>
 
-      <button type="button" class="btn btn-default btn-lg" onclick="calculateCost()">How Much is This Worth?</button>
+  <div class="container-fluid">
+      <div class="header">
+        <h1>The True Cost of Shopping</h1>
+        <hr>
+        <h2>Have you ever considered the true cost of what you're buying?</h2>
+        <h4>We've always heard the term 'Time is Money'.</h4>
+        <h3>So what if you considered the cost of shopping in terms of hours instead of dollars?</h3>
+      </div>
 
-      <h3 id="cost">Cost</h3>
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+            <div class="form-group input-form">
+                <label for="priceInput">Item Price:</label>
+                <input type="number" class="form-control" placeholder="Enter item price" id="price"><br>
+                <label for="wageInput">Hourly Wage:</label>
+                <input type="number" class="form-control" placeholder="Enter your hourly wage" id="wage">
+                <br>
+                <small class="form-text text-muted small-note">How to calculate your hourly wage:</small>
+                <small class="form-text text-muted small-note">Divide your annual salary by total number of hours worked. There are 2080 hours in a standard 40-hour workweek per year. For more realistic estimates, enter your after-tax hourly wage.</small>
+                <button type="button" class="btn btn-success btn-lg" onclick="calculateCost()">Calculate Hours to Work</button>
+            </div>
+          </div>
+        </div>
+        <div class="result">
+          <h3 id="cost">Cost</h3>
+          <small class="form-text text-muted small-note">You would need to work this number of hours to purchase the item you want.</small>
+        </div>
+
     </div>
+
 
 
 </body>
